@@ -13,6 +13,7 @@
 		770D2B7A1DCCB1F50002CCA5 /* MyRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D2B791DCCB1F50002CCA5 /* MyRefreshFooter.m */; };
 		770D57C41DD5FDAC0000C318 /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D57C31DD5FDAC0000C318 /* MyWebView.m */; };
 		770D57D11DD6F0360000C318 /* SideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D57D01DD6F0360000C318 /* SideslipViewController.m */; };
+		77165DF61DE5C97500857458 /* ZhiHuDailyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77165DF51DE5C97500857458 /* ZhiHuDailyPageViewController.m */; };
 		77190C0A1DC0E29400900B98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77190C091DC0E29400900B98 /* main.m */; };
 		77190C0D1DC0E29400900B98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77190C0C1DC0E29400900B98 /* AppDelegate.m */; };
 		77190C151DC0E29500900B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77190C141DC0E29500900B98 /* Assets.xcassets */; };
@@ -61,6 +62,8 @@
 		770D57C31DD5FDAC0000C318 /* MyWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebView.m; sourceTree = "<group>"; };
 		770D57CF1DD6F0360000C318 /* SideslipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SideslipViewController.h; sourceTree = "<group>"; };
 		770D57D01DD6F0360000C318 /* SideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideslipViewController.m; sourceTree = "<group>"; };
+		77165DF41DE5C97500857458 /* ZhiHuDailyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiHuDailyPageViewController.h; sourceTree = "<group>"; };
+		77165DF51DE5C97500857458 /* ZhiHuDailyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiHuDailyPageViewController.m; sourceTree = "<group>"; };
 		77190C051DC0E29400900B98 /* MyZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77190C091DC0E29400900B98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77190C0B1DC0E29400900B98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -244,6 +247,8 @@
 				770D57D01DD6F0360000C318 /* SideslipViewController.m */,
 				77CE4F651DDC9535000952E9 /* AboutZhiHuDailyViewController.h */,
 				77CE4F661DDC9535000952E9 /* AboutZhiHuDailyViewController.m */,
+				77165DF41DE5C97500857458 /* ZhiHuDailyPageViewController.h */,
+				77165DF51DE5C97500857458 /* ZhiHuDailyPageViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				77190C0A1DC0E29400900B98 /* main.m in Sources */,
 				77C7242C1DC449E000067490 /* BullshitModel.m in Sources */,
 				771FB3761DD8A41F0024DE34 /* MyClearCacheCell.m in Sources */,
+				77165DF61DE5C97500857458 /* ZhiHuDailyPageViewController.m in Sources */,
 				770D2B7A1DCCB1F50002CCA5 /* MyRefreshFooter.m in Sources */,
 				77190C4A1DC0F6CC00900B98 /* BullshitViewController.m in Sources */,
 				77CE4F671DDC9535000952E9 /* AboutZhiHuDailyViewController.m in Sources */,

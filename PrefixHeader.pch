@@ -20,12 +20,13 @@
 /** 颜色 **/
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 /** URL **/
+#define ZhiHuDailyURL @"http://daily.zhihu.com/"
 #define MyZhiHu(type,timeSp) [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/section/%@/before/%@",type,timeSp]
 #define MyZhiHuDaily(DataID) [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/news/%@",DataID]
 /** HTML **/
 #define MyZhiHuHTML(css,body) [NSString stringWithFormat:@"%@%@%@%@",@"<link rel=\"stylesheet\" href=\"",css,@"\"type=\"text/css\"/>",body];
 /** 知乎简介 **/
-#define ZhiHuDailySummary @"知乎日报是一款拥有千万用户的资讯类客户端,主题日报包括动漫、设计、大公司、游戏、财经、电影、电子音乐、互联网安全等丰富内容.在知乎日报，告别浮躁,重获阅读的愉悦.\n\n© 2016 知乎";
+#define ZhiHuDailySummary @"知乎日报是一款拥有千万用户的资讯类客户端，每日提供来自知乎社区的精选问答，还有国内一流媒体的专栏特稿。\n\n主题日报包括动漫、设计、大公司、游戏、财经、电影、电子音乐、互联网安全等丰富内容，为业内人和资深爱好者推荐各领域最精彩文章，满足高质量阅读需求。\n\n© 2016 知乎";
 /** 日志 **/
 #ifdef DEBUG
 #define MyLog(...) NSLog(__VA_ARGS__)

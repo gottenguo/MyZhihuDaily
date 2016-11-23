@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <ViewDeck/ViewDeck.h>
 #import <DKNightVersion/DKNightVersion.h>
+#import "ZhiHuDailyPageViewController.h"
 
 @interface AboutZhiHuDailyViewController : UIViewController
 
