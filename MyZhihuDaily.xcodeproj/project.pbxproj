@@ -14,6 +14,7 @@
 		770D57C41DD5FDAC0000C318 /* MyWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D57C31DD5FDAC0000C318 /* MyWebView.m */; };
 		770D57D11DD6F0360000C318 /* SideslipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 770D57D01DD6F0360000C318 /* SideslipViewController.m */; };
 		77165DF61DE5C97500857458 /* ZhiHuDailyPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77165DF51DE5C97500857458 /* ZhiHuDailyPageViewController.m */; };
+		77165DF91DE5F0FF00857458 /* UIView+MaskingLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77165DF81DE5F0FF00857458 /* UIView+MaskingLayer.m */; };
 		77190C0A1DC0E29400900B98 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77190C091DC0E29400900B98 /* main.m */; };
 		77190C0D1DC0E29400900B98 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77190C0C1DC0E29400900B98 /* AppDelegate.m */; };
 		77190C151DC0E29500900B98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77190C141DC0E29500900B98 /* Assets.xcassets */; };
@@ -64,6 +65,8 @@
 		770D57D01DD6F0360000C318 /* SideslipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SideslipViewController.m; sourceTree = "<group>"; };
 		77165DF41DE5C97500857458 /* ZhiHuDailyPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZhiHuDailyPageViewController.h; sourceTree = "<group>"; };
 		77165DF51DE5C97500857458 /* ZhiHuDailyPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZhiHuDailyPageViewController.m; sourceTree = "<group>"; };
+		77165DF71DE5F0FF00857458 /* UIView+MaskingLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MaskingLayer.h"; sourceTree = "<group>"; };
+		77165DF81DE5F0FF00857458 /* UIView+MaskingLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MaskingLayer.m"; sourceTree = "<group>"; };
 		77190C051DC0E29400900B98 /* MyZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77190C091DC0E29400900B98 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77190C0B1DC0E29400900B98 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				771FB3781DD8A5A20024DE34 /* NSString+Extension.m */,
 				77EED3E31DE09C6F00562FC6 /* UIBarButtonItem+MyItem.h */,
 				77EED3E41DE09C6F00562FC6 /* UIBarButtonItem+MyItem.m */,
+				77165DF71DE5F0FF00857458 /* UIView+MaskingLayer.h */,
+				77165DF81DE5F0FF00857458 /* UIView+MaskingLayer.m */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 				770D2B771DCCB1C40002CCA5 /* MyRefreshHeader.m in Sources */,
 				77190C471DC0F6A700900B98 /* SmallThingViewController.m in Sources */,
 				770D57C41DD5FDAC0000C318 /* MyWebView.m in Sources */,
+				77165DF91DE5F0FF00857458 /* UIView+MaskingLayer.m in Sources */,
 				770D2B741DCB900B0002CCA5 /* MyExtensionConfig.m in Sources */,
 				770D57D11DD6F0360000C318 /* SideslipViewController.m in Sources */,
 				77EED3E51DE09C6F00562FC6 /* UIBarButtonItem+MyItem.m in Sources */,

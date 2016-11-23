@@ -27,7 +27,8 @@
     [self setTitleView];
     [self setUpRefresh];
     [self LoadAccordingToDate];
-    [self addMaskingLayer:8888];
+
+    [self.view addMaskingLayer:self.webView.scrollView Tag:8888];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -94,32 +95,6 @@
     [self.navigationController pushViewController:aboutZhiHuDaily animated:YES];
 }
 
--(void)addMaskingLayer:(CGFloat) Tag{
-    
-    //给UIWebBrowserView添加遮盖层
-    UIView *backHeadView = [[UIView alloc]init];
-    backHeadView.dk_backgroundColorPicker = DKColorPickerWithKey(Ref);
-    backHeadView.frame = self.webView.frame;
-    backHeadView.tag = Tag;
-    [self.webView.scrollView addSubview:backHeadView];
-}
-
--(void)removeMaskingLayer:(CGFloat) Tag{
-    
-    //删除遮盖层
-    UIView *subview = [self.webView.scrollView viewWithTag:Tag];
-    [UIView animateWithDuration:0.2
-                     animations:^{
-                         CGPoint point = subview.center;
-                         point.y += 500;
-                         [subview setCenter:point];
-                     }
-                     completion:^(BOOL finished) {
-                         [subview removeFromSuperview];
-                     }];
-    
-}
-
 -(void)setUpRefresh{
     
     self.webView.scrollView.mj_header = [MyRefreshHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshHeader)];
@@ -166,7 +141,7 @@
             [self.webView.scrollView.mj_header endRefreshing];
             [self.webView.scrollView.mj_footer endRefreshing];
             
-            [self addMaskingLayer:9999];
+            [self.view addMaskingLayer:self.webView.scrollView Tag:9999];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.webView.scrollView.mj_header endRefreshing];
@@ -227,8 +202,8 @@
     [self.webView stringByEvaluatingJavaScriptFromString:
          @"document.documentElement.style.webkitTouchCallout='none';"];
     
-    [self removeMaskingLayer:8888];
-    [self removeMaskingLayer:9999];
+    [self.view removeMaskingLayer:self.webView.scrollView Tag:8888 AnimationDirection:AnimationTopDown];
+    [self.view removeMaskingLayer:self.webView.scrollView Tag:9999 AnimationDirection:AnimationTopDown];
 }
 
 @end

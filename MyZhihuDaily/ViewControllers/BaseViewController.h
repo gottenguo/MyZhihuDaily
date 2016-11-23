@@ -20,7 +20,7 @@
 #import "MyRefreshHeader.h"
 #import "AboutZhiHuDailyViewController.h"
 
-@interface BaseViewController : UIViewController <UIWebViewDelegate, UIScrollViewDelegate>
+@interface BaseViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong, nonatomic)NSDate *datenow;
 @property (strong, nonatomic)MyWebView *webView;

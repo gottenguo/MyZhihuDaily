@@ -29,8 +29,16 @@
     CGRect frame = self.view.frame;
     frame.size.height -= 59;
     self.webView.frame = frame;
+    self.webView.delegate = self;
     [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.url]]];
     [self.view addSubview:self.webView];
+    
+    self.nightVersionManager = [DKNightVersionManager sharedManager];
+    self.webView.dk_backgroundColorPicker = DKColorPickerWithKey(Ref);
+    self.webView.scrollView.dk_backgroundColorPicker = DKColorPickerWithKey(Ref);
+    
+    if([self.nightVersionManager.themeVersion isEqualToString:@"NIGHT"])
+        [self.view addMaskingLayer:self.webView Tag:9999];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -51,6 +59,20 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - UIWebViewDelegate
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+
+    if([self.nightVersionManager.themeVersion isEqualToString:@"NIGHT"]){
+        [self.webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('h1')[0].style.color='#c3c3c3'"];
+        [self.webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByTagName('body')[0].style.background='#383838'"];
+        [self.webView stringByEvaluatingJavaScriptFromString:@"document.getElementsByClassName('container-fixed-width main-content')[0].style.color='#c3c3c3'"];
+        
+#warning BigBUG
+        [self.view removeMaskingLayer:self.webView Tag:9999 AnimationDirection:AnimationFromLeftToRight];
+    }
+
 }
 
 /*

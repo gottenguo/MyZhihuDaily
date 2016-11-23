@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import <ViewDeck/ViewDeck.h>
+#import <DKNightVersion/DKNightVersion.h>
 
-@interface ZhiHuDailyPageViewController : UIViewController
+@interface ZhiHuDailyPageViewController : UIViewController <UIWebViewDelegate>
 
 @property (strong, nonatomic)NSString *url;
 @property (strong, nonatomic)UIWebView *webView;
+@property (strong, nonatomic) DKNightVersionManager *nightVersionManager;
 
 @end
