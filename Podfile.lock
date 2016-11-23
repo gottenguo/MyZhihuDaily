@@ -1,0 +1,58 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - DKNightVersion (2.3.0):
+    - DKNightVersion/Core (= 2.3.0)
+    - DKNightVersion/CoreAnimation (= 2.3.0)
+    - DKNightVersion/UIKit (= 2.3.0)
+  - DKNightVersion/Core (2.3.0):
+    - DKNightVersion/Core/DeallocBlockExecutor (= 2.3.0)
+    - DKNightVersion/Core/extobjc (= 2.3.0)
+  - DKNightVersion/Core/DeallocBlockExecutor (2.3.0)
+  - DKNightVersion/Core/extobjc (2.3.0)
+  - DKNightVersion/CoreAnimation (2.3.0):
+    - DKNightVersion/Core
+  - DKNightVersion/UIKit (2.3.0):
+    - DKNightVersion/Core
+  - MBProgressHUD (0.9.2)
+  - MJExtension (3.0.10)
+  - MJRefresh (3.1.0)
+  - SDWebImage (3.7.6):
+    - SDWebImage/Core (= 3.7.6)
+  - SDWebImage/Core (3.7.6)
+  - ViewDeck (2.4.2)
+
+DEPENDENCIES:
+  - AFNetworking
+  - DKNightVersion
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - SDWebImage
+  - ViewDeck
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  DKNightVersion: 459438cbfd14edb9e41a777ff14b18e5661b9269
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
+  MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
+  SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
+  ViewDeck: 0b7b83bc2782a20dfb76207d0a2e8c5e6a6d182d
+
+PODFILE CHECKSUM: ccc2679c7e73da9eae4a7775875fe8ee013be97d
+
+COCOAPODS: 1.0.0

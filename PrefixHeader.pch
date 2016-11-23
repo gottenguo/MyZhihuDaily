@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  MyZhihuDaily
+//
+//  Created by gottenguo on 16/10/27.
+//  Copyright © 2016年 郭三涂. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "NSString+Extension.h"
+#import "UIBarButtonItem+MyItem.h"
+#define AMSlideMenuWithoutStoryboards
+/** 字体 **/
+#define  MyFont(fontSize) [UIFont fontWithName:@"HelveticaNeue-Medium" size:fontSize]
+/** 颜色 **/
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+/** URL **/
+#define MyZhiHu(type,timeSp) [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/section/%@/before/%@",type,timeSp]
+#define MyZhiHuDaily(DataID) [NSString stringWithFormat:@"http://news-at.zhihu.com/api/4/news/%@",DataID]
+/** HTML **/
+#define MyZhiHuHTML(css,body) [NSString stringWithFormat:@"%@%@%@%@",@"<link rel=\"stylesheet\" href=\"",css,@"\"type=\"text/css\"/>",body];
+/** 知乎简介 **/
+#define ZhiHuDailySummary @"知乎日报是一款拥有千万用户的资讯类客户端,主题日报包括动漫、设计、大公司、游戏、财经、电影、电子音乐、互联网安全等丰富内容.在知乎日报，告别浮躁,重获阅读的愉悦.\n\n© 2016 知乎";
+/** 日志 **/
+#ifdef DEBUG
+#define MyLog(...) NSLog(__VA_ARGS__)
+#else
+#define MyLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */
