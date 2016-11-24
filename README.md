@@ -6,7 +6,7 @@
 
 ### 关于APP 
 
-![HomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/HomePage.png "ererere")    ![NightHomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/NightHomePage.png)    ![SideslipPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/SideslipPage.png)    ![AboutZhiHuDailyPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/AboutZhiHuDailyPage.png)
+![HomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/HomePage.PNG)    ![NightHomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/NightHomePage.PNG)    ![SideslipPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/SideslipPage.PNG)    ![AboutZhiHuDailyPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/AboutZhiHuDailyPage.PNG)
 
 首先要感谢 [izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)，没有他对《知乎日报》API的详细分析就不会有这个APP。再要感谢[官方APP](http://daily.zhihu.com/)，没有它作为原型参照，此APP也不可能这么快的完成。
 
