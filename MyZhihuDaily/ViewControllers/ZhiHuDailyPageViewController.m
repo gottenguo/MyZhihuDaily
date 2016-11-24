@@ -72,7 +72,6 @@
 #warning BigBUG
         [self.view removeMaskingLayer:self.webView Tag:9999 AnimationDirection:AnimationFromLeftToRight];
     }
-
 }
 
 /*
