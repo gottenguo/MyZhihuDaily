@@ -2,18 +2,15 @@
 我的《知乎日报》IOS版，__仅供学习和娱乐__。
 
 ### 前言
-因为很喜欢知乎日报某些栏目内容，所以决定自己来写一个客户端，虽然跟官方的APP比较起来略显幼稚，但这也不失为一个锻炼自己的机会，断断续续历时一个月写完这个APP后很有成就感。
+因为很喜欢《知乎日报》某些栏目内容，所以决定自己来写一个客户端，虽然跟官方的APP比较起来略显幼稚，但这也不失为一个锻炼自己的机会，历时一个月写完这个APP后很有成就感。
 
 ### 关于APP 
 
-![HomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/HomePage.png)
-![NightHomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/NightHomePage.png)
-![SideslipPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/SideslipPage.png)
-![AboutZhiHuDailyPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/AboutZhiHuDailyPage.png)
+![HomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/HomePage.png "ererere")    ![NightHomePage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/NightHomePage.png)    ![SideslipPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/SideslipPage.png)    ![AboutZhiHuDailyPage](https://raw.githubusercontent.com/gottenGuo/ResourceFile/master/AboutZhiHuDailyPage.png)
 
-首先要感谢 [izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)，没有他对知乎日报API的详细分析就不会有这个APP。再要感谢[官方APP](http://daily.zhihu.com/)，没有它作为原型参照，此APP也不可能这么快的完成。
+首先要感谢 [izzyleung](https://github.com/izzyleung/ZhihuDailyPurify/wiki/%E7%9F%A5%E4%B9%8E%E6%97%A5%E6%8A%A5-API-%E5%88%86%E6%9E%90)，没有他对《知乎日报》API的详细分析就不会有这个APP。再要感谢[官方APP](http://daily.zhihu.com/)，没有它作为原型参照，此APP也不可能这么快的完成。
 
-MyZhiHuDaily主要获取官方三个数据接口：__瞎扯、小事、大误__，与官方同步更新，本地并未保存数据（图片缓存除外）。MyZhiHuDaily除以上三个模块，还拥有__关于知乎__模块，此模块有对知乎日报（官方）的简介，并提供下载链接与二维码链接。
+MyZhiHuDaily主要获取官方三个数据接口：__瞎扯、小事、大误__，与官方同步更新，本地并未保存数据（图片缓存除外）。MyZhiHuDaily除以上三个模块，还拥有__关于知乎__模块，此模块有对《知乎日报》（官方）的简介，并提供下载链接与二维码链接。
 
 项目中部分模块在加载数据时偶尔会出现白屏闪烁的BUG（特别是下载界面），我怀疑是由于UIWebView的私有控件（UIWebBrowserView）造成，我虽然采用了添加遮罩层去规避这个问题，但也只是降低了闪烁的机率，后续会解决，__Mark__
 
