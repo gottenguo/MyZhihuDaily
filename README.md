@@ -22,14 +22,15 @@ MyZhiHuDaily代码相对简洁，且由纯代码构成，仍采用经典的MVC�
 ### 感谢
 在日常的学习中以及项目的开发中，得到了很多前辈的指导，以至于让自己少踩了很多坑（也踩过很多坑），非常崇拜这些有分享精神的技术前辈，他们也影响了我整个开发之路，如果有可能我也想完成自己的一个开源框架（^_^），推荐一篇文章 [什么是开源精神 ?](https://github.com/lifesinger/blog/issues/167)
 
-__MyZhiHuDaily项目中用到了很多优秀的第三方框架，感谢以下开发者：__
+__MyZhiHuDaily项目中用到了很多优秀的第三方框架，感谢以下开源框架开发者：__
 
-- [AFNetworking](https://github.com/AFNetworking)
-- [Draveness](https://github.com/Draveness)
-- [Jonathan George](https://github.com/jdg)
-- [M了个J](https://github.com/CoderMJLee)
-- [Olivier Poitrey](https://github.com/rs)
-- [ViewDeck](https://github.com/ViewDeck)
+- [AFNetworking](https://github.com/AFNetworking/AFNetworking)
+- [DKNightVersion](https://github.com/Draveness/DKNightVersion)
+- [MBProgressHUD](https://github.com/jdg/MBProgressHUD)
+- [MJExtension](https://github.com/CoderMJLee/MJExtension)
+- [MJRefresh](https://github.com/CoderMJLee/MJRefresh)
+- [SDWebImage](https://github.com/rs/SDWebImage)
+- [ViewDeck](https://github.com/ViewDeck/ViewDeck)
 
 
 
