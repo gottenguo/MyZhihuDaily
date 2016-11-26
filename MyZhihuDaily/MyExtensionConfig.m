@@ -7,6 +7,8 @@
 //
 
 #import "MyExtensionConfig.h"
+#import "MJExtension.h"
+#import "ListDataModel.h"
 
 @implementation MyExtensionConfig
 

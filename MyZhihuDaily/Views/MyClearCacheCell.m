@@ -6,6 +6,8 @@
 
 
 #import "MyClearCacheCell.h"
+#import "SDImageCache.h"
+#import "MBProgressHUD.h"
 
 //缓存路径
 #define XMGGustomCacheFile [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).lastObject stringByAppendingPathComponent:@"default"]

@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MJExtension.h>
-#import "ListDataModel.h"
 
 /** MJExtension的配置类 */
 @interface MyExtensionConfig : NSObject

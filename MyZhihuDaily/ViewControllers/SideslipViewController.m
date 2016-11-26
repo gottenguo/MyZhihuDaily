@@ -7,8 +7,20 @@
 //
 
 #import "SideslipViewController.h"
+#import "ViewDeck.h"
+#import "DKNightVersion.h"
+#import "MyClearCacheCell.h"
+#import "BaseViewController.h"
 
-static NSString * const MyCleraCacheCellid = @"MyClearCacheCell";
+static NSString *const MyCleraCacheCellId = @"MyClearCacheCell";
+
+@interface SideslipViewController()
+
+@property (strong, nonatomic) UISwitch *nigthSwitch;
+@property (strong, nonatomic) UITableView* tableView;
+@property (strong, nonatomic) DKNightVersionManager *nightVersionManager;
+
+@end
 
 @implementation SideslipViewController
 
@@ -23,7 +35,7 @@ static NSString * const MyCleraCacheCellid = @"MyClearCacheCell";
     self.tableView.delegate = self;
     self.tableView.backgroundColor = RGBA(45, 45, 45, 1);
     self.view.backgroundColor = self.tableView.backgroundColor;
-    [self.tableView registerClass:[MyClearCacheCell class] forCellReuseIdentifier:MyCleraCacheCellid];
+    [self.tableView registerClass:[MyClearCacheCell class] forCellReuseIdentifier:MyCleraCacheCellId];
     [self.view addSubview:self.tableView];
     
     self.nigthSwitch = [[UISwitch alloc]init];
@@ -110,7 +122,7 @@ static NSString * const MyCleraCacheCellid = @"MyClearCacheCell";
 
     }else if (indexPath.row == 2){
         
-        cell = [tableView dequeueReusableCellWithIdentifier:MyCleraCacheCellid];
+        cell = [tableView dequeueReusableCellWithIdentifier:MyCleraCacheCellId];
         cell.imageView.image = [UIImage imageNamed:@"Setting"];
         
     }else if (indexPath.row == 3) {

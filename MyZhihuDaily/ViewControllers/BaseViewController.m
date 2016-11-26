@@ -7,6 +7,25 @@
 //
 
 #import "BaseViewController.h"
+#import "ViewDeck.h"
+#import "MyWebView.h"
+#import "MJExtension.h"
+#import "ContentModel.h"
+#import "AFNetworking.h"
+#import "ListDataModel.h"
+#import "MBProgressHUD.h"
+#import "DKNightVersion.h"
+#import "MyRefreshFooter.h"
+#import "MyRefreshHeader.h"
+#import "AboutZhiHuDailyViewController.h"
+
+@interface BaseViewController ()
+
+@property (strong, nonatomic)MyWebView *webView;
+@property (strong, nonatomic)DKNightVersionManager *nightVersionManager;
+@property (strong, nonatomic)NSMutableArray<ListDataModel*> *listDataModels;
+
+@end
 
 @implementation BaseViewController
 
@@ -137,7 +156,7 @@
         
         self.listDataModels = [ListDataModel mj_objectArrayWithKeyValuesArray:[responseObject valueForKey:@"stories"]];
         if(self.listDataModels){
-            [self loadingBullshitModel:self.listDataModels.firstObject.ID];
+            [self loadingContentModel:self.listDataModels.firstObject.ID];
             [self.webView.scrollView.mj_header endRefreshing];
             [self.webView.scrollView.mj_footer endRefreshing];
             
@@ -150,14 +169,14 @@
     }];
 }
 
--(void)loadingBullshitModel:(NSString *)DataID{
+-(void)loadingContentModel:(NSString *)DataID{
     
     NSString *URLString = MyZhiHuDaily(DataID);    
     [[[AFHTTPSessionManager alloc]init] GET:URLString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        BullshitModel *bullshitModel= [BullshitModel mj_objectWithKeyValues:responseObject];
-        if(bullshitModel){
-            [self.webView setUpHeaderView:bullshitModel];
+        ContentModel *contentModel= [ContentModel mj_objectWithKeyValues:responseObject];
+        if(contentModel){
+            [self.webView setUpHeaderView:contentModel];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         MyLog(@"RequestError － %@",error);

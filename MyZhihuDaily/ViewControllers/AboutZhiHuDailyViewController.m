@@ -7,6 +7,9 @@
 //
 
 #import "AboutZhiHuDailyViewController.h"
+#import "ViewDeck.h"
+#import "DKNightVersion.h"
+#import "ZhiHuDailyPageViewController.h"
 
 @interface AboutZhiHuDailyViewController ()
 

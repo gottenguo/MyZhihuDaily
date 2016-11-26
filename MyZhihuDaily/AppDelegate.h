@@ -7,18 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <ViewDeck/ViewDeck.h>
-#import <DKNightVersion/DKNightVersion.h>
-#import "SideslipViewController.h"
-#import "BullshitViewController.h"
-#import "SideslipViewController.h"
-#import "SmallThingViewController.h"
-#import "BigMistakeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) IIViewDeckController *viewDeckController;
 
 @end
 

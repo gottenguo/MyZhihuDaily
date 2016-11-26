@@ -1,5 +1,5 @@
 //
-//  BullshitModel.h
+//  ContentModel.h
 //  MyZhihuDaily
 //
 //  Created by gottenguo on 16/10/29.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface BullshitModel : NSObject
+@interface ContentModel : NSObject
 
 @property (strong, nonatomic) NSString* body;
 @property (strong, nonatomic) NSString* image_source;

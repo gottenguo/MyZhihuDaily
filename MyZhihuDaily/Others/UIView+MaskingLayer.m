@@ -7,6 +7,7 @@
 //
 
 #import "UIView+MaskingLayer.h"
+#import "DKNightVersion.h"
 
 @implementation UIView (MaskingLayer)
 

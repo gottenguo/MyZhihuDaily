@@ -15,7 +15,6 @@
 #import "NSString+Extension.h"
 #import "UIView+MaskingLayer.h"
 #import "UIBarButtonItem+MyItem.h"
-#define AMSlideMenuWithoutStoryboards
 /** 字体 **/
 #define  MyFont(fontSize) [UIFont fontWithName:@"HelveticaNeue-Medium" size:fontSize]
 /** 颜色 **/

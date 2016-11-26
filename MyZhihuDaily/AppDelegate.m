@@ -7,6 +7,19 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewDeck.h"
+#import "DKNightVersion.h"
+#import "SideslipViewController.h"
+#import "BullshitViewController.h"
+#import "SideslipViewController.h"
+#import "SmallThingViewController.h"
+#import "BigMistakeViewController.h"
+
+@interface AppDelegate()
+
+@property (strong, nonatomic) IIViewDeckController *viewDeckController;
+
+@end
 
 @implementation AppDelegate
 

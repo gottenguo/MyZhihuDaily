@@ -26,7 +26,7 @@
 		771FB3761DD8A41F0024DE34 /* MyClearCacheCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771FB3751DD8A41F0024DE34 /* MyClearCacheCell.m */; };
 		771FB3791DD8A5A20024DE34 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 771FB3781DD8A5A20024DE34 /* NSString+Extension.m */; };
 		777BC48A1DCE227200D6E73C /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 777BC4891DCE227200D6E73C /* BaseViewController.m */; };
-		77C7242C1DC449E000067490 /* BullshitModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C7242B1DC449E000067490 /* BullshitModel.m */; };
+		77C7242C1DC449E000067490 /* ContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C7242B1DC449E000067490 /* ContentModel.m */; };
 		77CE4F671DDC9535000952E9 /* AboutZhiHuDailyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CE4F661DDC9535000952E9 /* AboutZhiHuDailyViewController.m */; };
 		77EED3E51DE09C6F00562FC6 /* UIBarButtonItem+MyItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EED3E41DE09C6F00562FC6 /* UIBarButtonItem+MyItem.m */; };
 		9A23F5DCFD5815D179CEB1D8 /* libPods-MyZhihuDaily.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A286501607AFD00620FCC205 /* libPods-MyZhihuDaily.a */; };
@@ -92,8 +92,8 @@
 		777BC4881DCE227200D6E73C /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		777BC4891DCE227200D6E73C /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		77C724291DC2360600067490 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
-		77C7242A1DC449E000067490 /* BullshitModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BullshitModel.h; sourceTree = "<group>"; };
-		77C7242B1DC449E000067490 /* BullshitModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BullshitModel.m; sourceTree = "<group>"; };
+		77C7242A1DC449E000067490 /* ContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentModel.h; sourceTree = "<group>"; };
+		77C7242B1DC449E000067490 /* ContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentModel.m; sourceTree = "<group>"; };
 		77CE4F651DDC9535000952E9 /* AboutZhiHuDailyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutZhiHuDailyViewController.h; sourceTree = "<group>"; };
 		77CE4F661DDC9535000952E9 /* AboutZhiHuDailyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutZhiHuDailyViewController.m; sourceTree = "<group>"; };
 		77EED3E31DE09C6F00562FC6 /* UIBarButtonItem+MyItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+MyItem.h"; sourceTree = "<group>"; };
@@ -214,8 +214,8 @@
 		77190C3B1DC0E35900900B98 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				77C7242A1DC449E000067490 /* BullshitModel.h */,
-				77C7242B1DC449E000067490 /* BullshitModel.m */,
+				77C7242A1DC449E000067490 /* ContentModel.h */,
+				77C7242B1DC449E000067490 /* ContentModel.m */,
 				770D2B6F1DCB8EE80002CCA5 /* ListDataModel.h */,
 				770D2B701DCB8EE80002CCA5 /* ListDataModel.m */,
 			);
@@ -473,7 +473,7 @@
 				77EED3E51DE09C6F00562FC6 /* UIBarButtonItem+MyItem.m in Sources */,
 				77190C0D1DC0E29400900B98 /* AppDelegate.m in Sources */,
 				77190C0A1DC0E29400900B98 /* main.m in Sources */,
-				77C7242C1DC449E000067490 /* BullshitModel.m in Sources */,
+				77C7242C1DC449E000067490 /* ContentModel.m in Sources */,
 				771FB3761DD8A41F0024DE34 /* MyClearCacheCell.m in Sources */,
 				77165DF61DE5C97500857458 /* ZhiHuDailyPageViewController.m in Sources */,
 				770D2B7A1DCCB1F50002CCA5 /* MyRefreshFooter.m in Sources */,

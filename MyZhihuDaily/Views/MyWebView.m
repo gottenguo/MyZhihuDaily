@@ -7,26 +7,29 @@
 //
 
 #import "MyWebView.h"
+#import "ContentModel.h"
+#import "DKNightVersion.h"
+#import "UIImageView+WebCache.h"
 
 @implementation MyWebView
 
--(void)setUpHeaderView:(BullshitModel *) bullshitModel{
+-(void)setUpHeaderView:(ContentModel *) contentModel{
     
     UIImageView *headerImageView = [[UIImageView alloc]init];
-    [headerImageView sd_setImageWithURL:[NSURL URLWithString:bullshitModel.image] placeholderImage:nil];
+    [headerImageView sd_setImageWithURL:[NSURL URLWithString:contentModel.image] placeholderImage:nil];
     headerImageView.frame = CGRectMake(0, 0, self.frame.size.width, 204);
     
     UIImageView *bottomMask = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"Image_Mask"]];
     bottomMask.frame = CGRectMake(0, 100, headerImageView.frame.size.width, 104);
     
     UILabel *titleLabel = [[UILabel alloc]init];
-    titleLabel.text = bullshitModel.title;
+    titleLabel.text = contentModel.title;
     [titleLabel setTextColor:[UIColor whiteColor]];
     titleLabel.font = [UIFont systemFontOfSize:20];
     titleLabel.frame = CGRectMake(15, 130, headerImageView.frame.size.width-15, 50);
     
     UILabel *imageSource = [[UILabel alloc]init];
-    imageSource.text = bullshitModel.image_source;
+    imageSource.text = contentModel.image_source;
     [imageSource setTextColor:[UIColor whiteColor]];
     imageSource.textAlignment = NSTextAlignmentRight;
     imageSource.font = [UIFont systemFontOfSize:10];
@@ -38,7 +41,7 @@
     [self.scrollView addSubview:headerImageView];
     self.scrollView.dk_backgroundColorPicker = DKColorPickerWithKey(Ref);
     
-    NSString *HTMLString = MyZhiHuHTML(bullshitModel.css[0],bullshitModel.body);
+    NSString *HTMLString = MyZhiHuHTML(contentModel.css[0],contentModel.body);
     
     [self loadHTMLString:HTMLString baseURL:nil];
     [self setBackgroundColor:[UIColor whiteColor]];

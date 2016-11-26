@@ -7,8 +7,13 @@
 //
 
 #import "ZhiHuDailyPageViewController.h"
+#import "ViewDeck.h"
+#import "DKNightVersion.h"
 
 @interface ZhiHuDailyPageViewController ()
+
+@property (strong, nonatomic)UIWebView *webView;
+@property (strong, nonatomic) DKNightVersionManager *nightVersionManager;
 
 @end
 

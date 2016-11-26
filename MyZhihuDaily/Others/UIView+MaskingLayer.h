@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DKNightVersion/DKNightVersion.h>
 
 @interface UIView (MaskingLayer)
 
 typedef enum {
-    AnimationFromLeftToRight,
     AnimationTopDown,
+    AnimationFromLeftToRight,
 } AnimationDirectionType;
 
 

@@ -7,13 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyClearCacheCell.h"
-#import "BaseViewController.h"
 
 @interface SideslipViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
-@property (strong, nonatomic) UISwitch *nigthSwitch;
-@property (strong, nonatomic) UITableView* tableView;
-@property (strong, nonatomic) DKNightVersionManager *nightVersionManager;
 
 @end

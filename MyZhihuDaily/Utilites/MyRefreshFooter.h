@@ -6,7 +6,7 @@
 //  Copyright © 2016年 郭三涂. All rights reserved.
 //
 
-#import <MJRefresh/MJRefresh.h>
+#import "MJRefreshBackNormalFooter.h"
 
 @interface MyRefreshFooter : MJRefreshBackNormalFooter
 

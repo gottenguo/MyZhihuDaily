@@ -7,8 +7,6 @@
 
 
 #import <UIKit/UIKit.h>
-#import <SDImageCache.h>
-#import "MBProgressHUD.h"
 
 @interface MyClearCacheCell : UITableViewCell
 

@@ -7,12 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <DKNightVersion/DKNightVersion.h>
-#import <SDWebImage/UIImageView+WebCache.h>
-#import "BullshitModel.h"
+@class ContentModel;
 
 @interface MyWebView : UIWebView
 
--(void)setUpHeaderView:(BullshitModel *) bullshitModel;
+-(void)setUpHeaderView:(ContentModel *) contentModel;
 
 @end
