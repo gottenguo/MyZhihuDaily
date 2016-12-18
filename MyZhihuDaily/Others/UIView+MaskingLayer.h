@@ -16,9 +16,9 @@ typedef enum {
 } AnimationDirectionType;
 
 
-//给UIWebBrowserView添加遮盖层
+//添加遮盖层
 -(void)addMaskingLayer:(UIView *)view Tag:(CGFloat) Tag;
-//删除遮盖层动画方向分为自上而下，从左至右
+//删除遮盖层,动画方向分为自上而下，从左至右
 -(void)removeMaskingLayer:(UIView *)view Tag:(CGFloat) Tag AnimationDirection:(AnimationDirectionType) AnimationDirectionType;
 
 @end

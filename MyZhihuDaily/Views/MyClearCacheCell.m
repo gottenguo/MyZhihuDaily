@@ -25,7 +25,7 @@
         self.userInteractionEnabled = NO;
 
 //        __weak typeof(self) weakSelf = self;
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             [NSThread sleepForTimeInterval:5.0];
             unsigned long long  size  =XMGGustomCacheFile.fileSize;
             size += [SDImageCache sharedImageCache].getSize;
@@ -64,7 +64,7 @@
     hud.margin = 10.f;
     
     [[SDImageCache sharedImageCache]clearDiskOnCompletion:^{
-        dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSFileManager *mgr = [NSFileManager defaultManager];
             [mgr removeItemAtPath:XMGGustomCacheFile error:nil];
             [mgr createDirectoryAtPath:XMGGustomCacheFile withIntermediateDirectories:YES attributes:nil error:nil];
